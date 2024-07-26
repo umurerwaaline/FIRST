@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>portfolio</title>
+    <style>
+        *{
+            margin: 0PX;
+            padding: 0PX;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .header-navbar{
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+
+        }
+        .header-navbar a{
+            color: white;
+            text-decoration: none;
+            margin-left: 120px;
+        }
+        
+        .banner,
+        .about-area,
+        .service-area,
+        .portfolio-area,
+        .contact-area
+        {
+          height:100vh ;
+         
+        }
+        #home{
+            background-color: GREY;
+        }
+        #about{
+            background-color: darkkhaki;
+        }
+        #services{
+            background-color: darkorchid;
+        }
+            #portfolio{
+             background-color: darksalmon;
+
+        }
+        #contact{
+            background-color: blue;
+        }
+        .text-content h2{
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 20%;
+            font-size: 90px;
+            color: #fff;
+            text-shadow: 0 5px 10px black;
+        }
+        .gridcontent{
+            align-items: center;
+            display:grid;
+            grid-template-columns:repeat(3,400px);
+            grid-template-rows: repeat(2,400px);
+            margin-left: 15%;
+            gap: 20px;
+        }
+        .grid-item{
+            background-color: green;
+            padding: 30px;
+            text-align: center;
+
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="header-navbar">
+	<a href="#home">home</a>
+	<a href="#about">about</a>
+	<a href="#services">services</a>
+	<a href="#portfolio">portfolio</a>
+	<a href="#contact">contact</a>
+</div>
+<div class="content-area ">
+	<div id="home"class="banner">
+		<div class="text-content">
+			<div class="gridcontent">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+            </div>
+		</div>
+	</div>
+    <div id="about"class="about-area">
+        <div class="text-content">
+            <h2>about</h2>
+    </div>
+    <div id="services"class="services-area">
+        <div class="text-content">
+            <h2>services</h2>
+    </div>
+    <div id="portfolio"class="portfolio-area">
+        <div class="text-content">
+            <h2>portfolio</h2>
+    </div>
+    <div id="contact"class="contact-area">
+        <div class="text-content">
+            <h2>contact</h2>
+    </div>
+</body>
+</html>
